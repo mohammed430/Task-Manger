@@ -3,6 +3,18 @@
 
 <head>
     <title>Add Task</title>
+    <script>
+        function sum(){
+            let sum = 0
+            for(let i=1; i<=100 ;i++){
+                sum = sum + i;
+            }
+            console.log(sum);
+        
+            
+        }
+    </script>
+
     
 </head>
 
@@ -45,7 +57,9 @@
             </select>
         </p>
 
-        <button type="button"> submit </button>
+        <!-- <button type="button"> submit </button> -->
+        <button type="submit" onclick="sum()">submit</button>
+            <script>console.log(sum)</script>
     </form>
 </body>
 
