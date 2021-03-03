@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Add Task</title>
-    </head>
-    <body>
-        <form>
-            <p>
-                <label>Title</label> <br>
-                <input type="text">
-            </p>
 
-            <p>
-                <lable>Describtion</lable> <br>
-                <textarea rows="5" cols="50"></textarea>
-            </p>
+<head>
+    <title>All Tasks</title>
 
-            <p>
-                <label>Catergory</label> <br>
-                <input type="text">
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
 
-            </p>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-            <p>
-                <lable> Priority level</lable> <br>
-                <select>
-                    <option>Hiigh</option>
-                    <option>Medium</option>
-                    <option>Low</option>
+        th, td{padding: 15px ;
+            text-align: left;
+        
+        }
 
-                </select>
-            </p>
+        th{
+            background-color: #4caf50;
+            color: white;
+        }
 
-            <p>
-                <lable> Progress Level</lable> <br>
-                <select>
-                    <option>Select and item</option>
-                    <option>Pending</option>
-                    <option>Started</option>
-                    <option>Completed</option>
-                    
-                </select>
-                </p>
+        tr:nth-child(even){
+            background-color:#f2f2f2;
+        }
+    </style>
+</head>
 
-                <button type="button"> submit </button>             
-        </form>
-    </body>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>Describtion</th>
+                <th>category</th>
+                <th>Priority Level</th>
+                <th>Progress leve</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Reading</td>
+                <td>Reading module 2 of ICT 694</td>
+                <td>Self study</td>
+                <td>high</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Reading</td>
+                <td>Reading module 3 of ICT 694</td>
+                <td>Self study</td>
+                <td>low</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Reading</td>
+                <td>Reading module 4 of ICT 694</td>
+                <td>Self study</td>
+                <td>high</td>
+                <td>Completed</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
 </html>
+
