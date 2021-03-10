@@ -60,7 +60,19 @@
                     <option>Completed</option>
                 </select>
             </p>
-            <button type="button">Submit</button>
+            <button type="button" onclick="validate()">Submit</button>
         </form>
+
+        <script>
+            function validate(){
+                let titleDom = document.getElementById('title');
+                let title = titleDom.value;
+                console.log(title);
+                if(title === ''){
+                    alert("Title is empty")    
+                };
+                
+            }
+        </script>
     </body>
 </html>
